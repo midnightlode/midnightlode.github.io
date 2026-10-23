@@ -117,3 +117,21 @@ tr:last-child td { border-bottom: 0; }
   .game-icon { width: 88px; height: 88px; border-radius: 20px; }
 }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; } }
+
+/* Per-game pages and links */
+.game-page { padding-block: 40px 8px; }
+.game-title { font-size: clamp(30px, 5vw, 44px); font-weight: 700; text-transform: uppercase; letter-spacing: 0.02em; }
+.links { display: inline-flex; flex-wrap: wrap; gap: 6px 18px; font-size: 15px; }
+.status .links { margin-left: auto; }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; }
+.choose { display: grid; gap: 14px; margin-block: 20px 28px; }
+.choice { text-decoration: none; color: var(--text); align-items: center; }
+.choice:hover { border-color: var(--ember); }
+.choice:focus-visible { outline: 2px solid var(--stripe); outline-offset: 3px; }
+.choice .game-icon { width: 72px; height: 72px; border-radius: 16px; }
+.choice h3 { color: var(--text); }
+@media (max-width: 640px) {
+  .status .links { margin-left: 0; }
+  .choice { grid-template-columns: auto 1fr; }
+  .choice .game-icon { width: 60px; height: 60px; }
+}
