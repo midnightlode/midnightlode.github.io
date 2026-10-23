@@ -1,0 +1,5 @@
+# GitHub Pages: publish the pages as they are, and leave out the notes and tools.
+exclude:
+  - CLAUDE.md
+  - _tools
+  - .claude
