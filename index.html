@@ -28,28 +28,49 @@
 </header>
 
 <main>
-  <section class="wrap hero">
-    <span class="eyebrow">Independent mobile games</span>
-    <h1>Games for the drive home</h1>
-    <p>Midnight Lode is a small studio making games for Android phones. Quick to start, easy to pick up, and worth one more go.</p>
-  </section>
+  <div class="hero-band">
+    <section class="wrap hero">
+      <span class="eyebrow">Independent mobile games</span>
+      <h1>Games for the drive home</h1>
+      <p>Midnight Lode is a small studio making games for Android phones. Quick to start, easy to pick up, and worth one more go.</p>
+      <div class="cta">
+        <a class="button" href="#games">See our games</a>
+        <a class="button ghost" href="#contact">Get in touch</a>
+      </div>
+    </section>
+  </div>
 
   <section class="wrap about" id="about" aria-labelledby="about-title">
     <h2 id="about-title">About us</h2>
-    <p>Midnight Lode is an independent studio making mobile games for Android. We build games that are quick to start and easy to pick up, free to play, with ads that are always optional.</p>
-    <p>We are a small team that cares about games you can pick up in a minute and still want to play again tomorrow. Below you can find everything we have made, and what is on its way.</p>
+    <p class="section-lead">Midnight Lode is an independent studio making mobile games for Android. We are a small team that cares about games you can pick up in a minute and still want to play again tomorrow.</p>
+    <div class="highlights">
+      <div class="highlight"><h3>Quick to start</h3><p>Simple to pick up. Open the game and you are playing.</p></div>
+      <div class="highlight"><h3>Free to play</h3><p>Our games are free to download, and the ads in them are optional.</p></div>
+      <div class="highlight"><h3>Made for Android</h3><p>Built for phones, with more games on the way.</p></div>
+    </div>
   </section>
 
   <section class="wrap games" id="games" aria-labelledby="games-title">
     <h2 id="games-title">Our games</h2>
-    <div class="choose">
-      <a class="game choice" href="world-racing-tournament/">
-        <img class="game-icon" src="img/wrt-icon.png" alt="World Racing Tournament app icon" width="384" height="384">
-        <div><h3>World Racing Tournament</h3><p>Endless highway racer &middot; Coming soon</p></div>
+    <p class="section-lead">Pick a game to see what it is about.</p>
+    <div class="cards">
+      <a class="card" href="world-racing-tournament/">
+        <div class="card-art"><img class="cover" src="img/wrt-night.jpg" alt="Two supercars racing side by side on a lit highway at night" width="900" height="506" loading="lazy"></div>
+        <div class="card-body">
+          <span class="pill">Coming soon</span>
+          <h3>World Racing Tournament</h3>
+          <p>An endless highway racer. Weave through traffic, fire your nitrous and race CPU rivals.</p>
+        </div>
+        <span class="card-go">View game &rarr;</span>
       </a>
-      <a class="game choice" href="tap-miner/">
-        <img class="game-icon" src="img/tapminer-icon.png" alt="Tap Miner app icon" width="256" height="256">
-        <div><h3>Tap Miner</h3><p>Idle mining tycoon &middot; On Google Play</p></div>
+      <a class="card" href="tap-miner/">
+        <div class="card-art miner"><img src="img/tapminer-icon.png" alt="Tap Miner app icon" width="256" height="256" loading="lazy"></div>
+        <div class="card-body">
+          <span class="pill">On Google Play</span>
+          <h3>Tap Miner</h3>
+          <p>An idle mining tycoon. Dig from a coal seam to an antimatter reactor with a crew of eleven.</p>
+        </div>
+        <span class="card-go">View game &rarr;</span>
       </a>
     </div>
   </section>
