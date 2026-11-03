@@ -198,3 +198,11 @@ tr:last-child td { border-bottom: 0; }
   .gallery { grid-template-columns: 1fr 1fr; }
   .gallery img:last-child { display: none; }
 }
+
+/* Portrait screenshots (Sikander: The Conqueror) */
+.gallery.portrait { grid-template-columns: repeat(4, 1fr); max-width: 860px; }
+.gallery.portrait img { aspect-ratio: 9 / 16; }
+@media (max-width: 640px) {
+  .gallery.portrait { grid-template-columns: 1fr 1fr; }
+  .gallery.portrait img:last-child { display: block; }
+}
