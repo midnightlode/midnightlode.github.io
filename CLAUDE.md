@@ -36,7 +36,7 @@ Never write a game's description, numbers or privacy facts from memory: take the
 - **Ads and data:** Unity Ads only (rewarded, optional), Unity IAP through Google Play (gem packs, VIP pass), asks for ad consent on first open, target audience 13+.
 
 **World Racing Tournament**
-- **Privacy policy:** written here; there is no copy in the project. It must match what the game does: the ad companies are in `Assets/Scripts/Ads.cs` and `levelPlay` in `Assets/Resources/Config/game.json` (Unity LevelPlay, Unity Ads, and Anzu for the roadside billboards). It says the game is not released yet and promises an ad-consent question before release. Change it whenever an ad network, analytics, purchases or consent change, and update the "Effective" date.
+- **Privacy policy:** written here; there is no copy in the project. It must match what the game does: the ad companies are in `Assets/Scripts/Ads.cs` and `levelPlay` in `Assets/Resources/Config/game.json` (Unity LevelPlay, Unity Ads, Google AdMob through LevelPlay; Google UMP asks for consent). The game also uses Unity Authentication, Cloud Save, Cloud Code, Remote Config, Multiplayer Services and Relay (online races: player names, cars and live positions are shown to other players), and Google Play Games sign-in. Anzu (billboard ads) was taken out on 2026-11-14 because it is not in the game; add it back only when it is. Since 2026-11-14 it no longer says "not released yet" (closed testing, then production). Change it whenever an ad network, analytics, purchases or consent change, and update the "Effective" date.
 - **Page text and numbers:** that project's `CLAUDE.md` (cars, modes) and `GAME_PLAN.md`. The car and mode counts come from `cars.json` and `modes.json` in `Assets/Resources/Config` there, counting only entries without `"enabled": false`.
 - **Pictures:** `Assets/Icons/icon.png`; shots from `Assets/Resources/Loading/`.
 - **When it launches:** swap "Coming soon to Google Play" for a Google Play button (same as Tap Miner's) on the home and game page, and remove "not released yet" from its policy.
@@ -59,7 +59,7 @@ Never write a game's description, numbers or privacy facts from memory: take the
 ## Looking and publishing
 
 - **Look first:** `node _tools/serve.js . 8765`, or start "website" in the Browser pane (`.claude/launch.json`). Check at phone width (375 px) that nothing scrolls sideways and every link and picture loads.
-- **Push only when the owner says so.** Pushing publishes it to the world. GitHub rebuilds in one to two minutes; check the live address afterwards.
+- **Never push.** The owner always pushes this site himself (2026-11-05: "I will manage on my own always"). Leave changes ready and tell him which pages changed. GitHub rebuilds one to two minutes after his push.
 - Commits here are signed **Midnight Lode / midnightlode@gmail.com** (set in this repository only, so the owner's work email stays off a public repository). Do not change it.
 - The repository belongs to the `midnightlode` GitHub account; this computer pushes as `abdulrehmankhalid906`, a collaborator. A 403 on push means that access was removed.
 - End commit messages with the Co-Authored-By line from the session.
