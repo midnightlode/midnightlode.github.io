@@ -26,28 +26,35 @@ Never write a game's description, numbers or privacy facts from memory: take the
 | Game | Folder here | Project | Store | Status |
 | --- | --- | --- | --- | --- |
 | Tap Miner | `tap-miner/` | `C:\Users\abdul.rehman\Tap Minner` | https://play.google.com/store/apps/details?id=com.midnightlode.tapminner | Live |
-| World Racing Tournament | `world-racing-tournament/` | `C:\Users\abdul.rehman\WorldRacingTournament` | none yet (package `com.midnightlode.worldracingtournament`) | Coming soon |
-| Sikander: The Conqueror | `sikander-the-conqueror/` | `C:\Users\abdul.rehman\SikanderTheConqueror` | none yet (package `com.midnightlode.sikander`) | Coming soon |
+| World Racing Tournament | `world-racing-tournament/` | `C:\Users\abdul.rehman\WorldRacingTournament` | https://play.google.com/store/apps/details?id=com.midnightlode.worldracingtournament | Live |
+| Sikandar: World Conquest (was Sikander: The Conqueror) | `sikander-the-conqueror/` (old spelling kept so the policy address stays) | `C:\Users\abdul.rehman\SikanderTheConqueror` | none yet (package `com.midnightlode.sikandar`) | Coming soon |
 
 **Tap Miner**
 - **Privacy policy:** its project's `docs/privacy.html` is the source. `tap-miner/privacy.html` is that text **word for word**, in this site's look; only the page around it differs. When the project's policy changes, copy the new text here. Its name is spelt "Tap Minner" in the policy, as in the project; the store title is "Tap Miner". Change both copies together or neither.
 - **Page text:** the Play Store description (`store/listing.md` in the project).
-- **Icon:** `store/StoreIcon_512.png`. Its feature graphic says "TAP MINNER", so it is not used here.
+- **Icon:** `store/StoreIcon_512.png`. Its feature graphic says "TAP MINNER", so it is not used here. The page's top picture, `img/tapminer-crew.jpg`, is `store/PromoEvent_1920x1080.png` (three miners, no text); the project has no gameplay screenshots, so the gallery (`img/tapminer-mine`, `-mines`, `-relics`, `-pickaxes`, 540 x 1209, `gallery portrait tall`) is four of the owner's own Play listing screenshots (store order 0, 1, 5, 6), taken from the store page on 2026-11-14.
+- **Released** 21 September 2026 (Google Play's "Released on").
+- **Page layout:** every game page uses the same top (`feature`: a wide picture, the icon, text, facts, a `status` bar), so they look alike. Keep a new game's page the same.
 - **Ads and data:** Unity Ads only (rewarded, optional), Unity IAP through Google Play (gem packs, VIP pass), asks for ad consent on first open, target audience 13+.
 
 **World Racing Tournament**
 - **Privacy policy:** written here; there is no copy in the project. It must match what the game does: the ad companies are in `Assets/Scripts/Ads.cs` and `levelPlay` in `Assets/Resources/Config/game.json` (Unity LevelPlay, Unity Ads, Google AdMob through LevelPlay; Google UMP asks for consent). The game also uses Unity Authentication, Cloud Save, Cloud Code, Remote Config, Multiplayer Services and Relay (online races: player names, cars and live positions are shown to other players), and Google Play Games sign-in. Anzu (billboard ads) was taken out on 2026-11-14 because it is not in the game; add it back only when it is. Since 2026-11-14 it no longer says "not released yet" (closed testing, then production). Change it whenever an ad network, analytics, purchases or consent change, and update the "Effective" date.
 - **Page text and numbers:** that project's `CLAUDE.md` (cars, modes) and `GAME_PLAN.md`. The car and mode counts come from `cars.json` and `modes.json` in `Assets/Resources/Config` there, counting only entries without `"enabled": false`.
 - **Pictures:** `Assets/Icons/icon.png`; shots from `Assets/Resources/Loading/`.
-- **When it launches:** swap "Coming soon to Google Play" for a Google Play button (same as Tap Miner's) on the home and game page, and remove "not released yet" from its policy.
+- **Released** 14 November 2026 (Google Play's "Released on"). Launched: Google Play buttons on its page, "On Google Play" on the home card. Online races (PVP and friend rooms, up to 4 players, five race modes from `multiplayer.json` contests) are live and on its page since 2026-11-14. The page never mentions the CPU drivers that fill empty PVP places (the game never tells players).
 
-**Sikander: The Conqueror**
+**Sikandar: World Conquest**
+- **Name:** renamed in the project on 2026-11-11 ("Sikandar", with an a, since 2026-11-03). The game page and home card use the new name; its policy pages too (2026-11-14, the owner's word; the name only, nothing else in the policy changed). The project now has its own policy, `Store/privacy_policy.html` (2026-11-11), not yet compared with ours.
+- **Page text and numbers (2026-11-14):** the store text in its `Store/PlayConsole_Setup.md` (1,500 states, 190 countries, 23 leaders, over 270 chapters, 1,000 Long War missions). The older notes below (118 chapters, `Shots/`) are superseded.
+- **Pictures (2026-11-14):** `Store/feature_1024x500.png` (Sikandar and the gold logo) as `img/sikandar-feature.jpg`; `Store/screenshots/1_battle` to `4_campaign_map` as `img/sikandar-*.jpg`, 540 x 960. The icon is still `img/sikander-icon.png` (unchanged since 2026-11-01).
 - **Privacy policy:** written here; the project has none yet (its in-game policy screen is a placeholder, `GameUi.PrivacyText`). It must match `Assets/Scripts/Shop.cs`: Unity Ads (rewarded and interstitial) and Unity IAP through Google Play (gem packs, piggy bank, Remove ads). It says the game is not released yet and promises an ad-consent question before release (the project has none yet). Target audience 13+ is assumed, not set in the project. Change it whenever an ad network, analytics, purchases or consent change, and update the "Effective" date.
 - **Page text and numbers:** that project's `CLAUDE.md` (1,500 states, 190 countries, 8 campaigns and 118 chapters: Philip 10, Sikander 50, Seleucus 18, and Antiochus, Mithridates, Cleopatra, Ptolemy and Antigonus 8 each; its own "78 chapters" and "Three campaigns" lines are older). Its `Store/listing.md` and some `Store/screenshots` are older (10 chapters, "Test store" on the store screen), so use them with care.
 - **Pictures:** `Store/icon_512.png` (since 2026-11-01 a painted Sikander, not the globe and crown), `Store/feature_1024x500.png` (a globe, no title), and screenshots from its `Shots/` folder (2026-11-01: `back_menu`, `lato_hud`, `back_campaign`, `back_briefing`; portrait, shown with `gallery portrait`; `Store/screenshots/` is older).
-- **When it launches:** same as World Racing Tournament: a Google Play button for "Coming soon", and remove "not released yet" from its policy.
+- **When it launches:** swap "Coming soon" for "On Google Play" on the home card and a Google Play button on its page (as World Racing Tournament's), and remove "not released yet" from its page and policy.
 
 ## Adding a new game
+
+Games are shown in the order they were released, oldest first (Tap Miner, World Racing Tournament, then coming-soon games), on the home page and in `privacy.html`. A live game shows its release date (Google Play's "Released on") on its home card and in its page's status bar.
 
 1. Make a `<game>/` folder (lower case, hyphens) with `index.html` and `privacy.html`. Copy Tap Miner's pair to start; change every `href`, title and description.
 2. The privacy policy: if the game's project has one, copy it word for word (as Tap Miner's). If not, write one from what the project actually uses (ad SDKs, purchases, analytics, consent, target audience) and tell the owner it needs his reading.
